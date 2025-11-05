@@ -2,6 +2,7 @@ import "./Game.sass";
 
 import { GameInfoComponent } from "../GameInfo/GameInfo";
 import { GameMapComponent } from "../GameMap/GameMap";
+import { GameControlsComponent } from "../GameControls/GameControls";
 import { ReactRenderer } from "lib/ReactRenderer";
 
 interface IGameProps {
@@ -13,7 +14,8 @@ export const GameComponent = ({renderer}: IGameProps) => {
   return (
     <div className="game-component">
       <GameInfoComponent renderer={renderer} />
-      <GameMapComponent renderer={renderer} /> 
+      <GameMapComponent renderer={renderer} />
+      <GameControlsComponent />
     </div>
   )
 }
